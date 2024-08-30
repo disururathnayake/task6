@@ -46,17 +46,14 @@ pipeline {
     }
 
     post {
-        success {
-            mail to: 'disuru.office@gmail.com',
-                 subject: "Pipeline Completed Successfully",
-                 body: "All stages completed successfully. Logs are attached.",
-                 
-        }
-        failure {
-            mail to: 'disuru.office@gmail.com',
-                 subject: "Pipeline Failed",
-                 body: "The pipeline failed. Please check the logs.",
-                 
-        }
+    success {
+        mail to: 'disuru.office@gmail.com',
+             subject: "Pipeline Completed Successfully",
+             body: "All stages completed successfully. Logs are attached."
+    }
+    failure {
+        mail to: 'disuru.office@gmail.com',
+             subject: "Pipeline Failed",
+             body: "The pipeline failed. Please check the logs."
     }
 }
