@@ -57,3 +57,4 @@ pipeline {
              body: "The pipeline failed. Please check the logs."
     }
 }
+}
